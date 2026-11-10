@@ -34,3 +34,7 @@ Os resultados mostram a evolução do indicador ao longo do tempo, mas não repr
 - AND
 - BETWEEN
 - ORDER BY
+
+## Período analisado
+
+De 2000 a 2025.
