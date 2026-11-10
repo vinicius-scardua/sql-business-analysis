@@ -10,3 +10,5 @@ FROM gdp_pc
 WHERE ref_year = 2025
 ORDER BY gdp_pc DESC
 LIMIT 10;
+
+-- Período de referência: 2025
