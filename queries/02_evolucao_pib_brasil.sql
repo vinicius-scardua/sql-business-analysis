@@ -10,3 +10,5 @@ FROM gdp_pc
 WHERE country = 'Brazil'
   AND ref_year BETWEEN 2000 AND 2025
 ORDER BY ref_year;
+
+-- Período de referência: 2000 a 2025
