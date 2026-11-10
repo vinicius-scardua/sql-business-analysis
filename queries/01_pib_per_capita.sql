@@ -1,0 +1,1 @@
+-- Consulta 01: PIB per capita por país
