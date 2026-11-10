@@ -1,20 +1,13 @@
--- Análise 04: Países com maior crescimento percentual do PIB per capita
--- Objetivo: identificar os países com maior crescimento percentual entre 2000 e 2025
+-- Análise 04: Emissões médias de CO2 per capita por região
+-- Objetivo: comparar as emissões médias de CO2 per capita entre as regiões em 2022
 -- Fonte: Base de dados utilizada no curso de SQL da FGV
 
 SELECT
-    inicial.country,
-    inicial.gdp_pc AS pib_per_capita_2000,
-    final.gdp_pc AS pib_per_capita_2025,
-    ROUND(
-        ((final.gdp_pc - inicial.gdp_pc) * 100.0) / inicial.gdp_pc,
-        2
-    ) AS crescimento_percentual
-FROM gdp_pc AS inicial
-INNER JOIN gdp_pc AS final
-    ON inicial.country = final.country
-WHERE inicial.ref_year = 2000
-  AND final.ref_year = 2025
-  AND inicial.gdp_pc > 0
-ORDER BY crescimento_percentual DESC
-LIMIT 10;
+    c.four_regions AS regiao,
+    ROUND(AVG(co.co2_pc), 2) AS emissao_media_co2
+FROM co2_emissions_pc co
+INNER JOIN country c
+    ON co.country = c.country
+WHERE co.ref_year = 2022
+GROUP BY c.four_regions
+ORDER BY emissao_media_co2 DESC;
