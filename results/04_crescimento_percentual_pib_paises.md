@@ -1,47 +1,33 @@
-# Análise 04 — Países com maior crescimento percentual do PIB per capita (2000–2025)
-
-## Pergunta de negócio
-
-Quais países apresentaram o maior crescimento percentual do PIB per capita entre 2000 e 2025?
+# Análise 04 — Emissões médias de CO₂ per capita por região
 
 ## Objetivo
+Comparar as emissões médias de CO₂ per capita entre as regiões do mundo em 2022.
 
-Comparar o PIB per capita dos países nos anos de 2000 e 2025, identificando os dez maiores crescimentos percentuais no período.
+## Consulta SQL
+A análise utiliza as tabelas `co2_emissions_pc` e `country`, relacionadas pelo nome do país. Foram utilizadas as cláusulas `INNER JOIN`, `WHERE`, `GROUP BY` e `ORDER BY`, além das funções `AVG()` e `ROUND()`.
 
-## Resultado
+## Resultados
 
-| País | PIB per capita 2000 (US$) | PIB per capita 2025 (US$) | Crescimento percentual |
-|---|---:|---:|---:|
-| Guyana | 7.490 | 66.400 | 786,52% |
-| China | 3.800 | 20.700 | 444,74% |
-| Armenia | 4.290 | 18.800 | 338,23% |
-| Myanmar | 1.120 | 4.380 | 291,07% |
-| Georgia | 5.170 | 20.100 | 288,78% |
-| Azerbaijan | 4.240 | 15.600 | 267,92% |
-| Ethiopia | 764 | 2.720 | 256,02% |
-| Vietnam | 3.730 | 13.100 | 251,21% |
-| Cambodia | 1.590 | 5.250 | 230,19% |
-| Bangladesh | 2.250 | 7.400 | 228,89% |
+| Região | Emissão média de CO₂ per capita |
+|---|---:|
+| Europa | 7,15 |
+| Ásia | 6,70 |
+| Américas | 3,80 |
+| África | 1,36 |
 
-## Interpretação
+*Unidade: toneladas de CO₂ por pessoa ao ano.*
 
-Guyana apresentou o maior crescimento percentual do PIB per capita entre 2000 e 2025, com aumento de 786,52%. O indicador passou de US$ 7.490 para US$ 66.400 no período.
+## Análise dos resultados
+A Europa apresentou a maior emissão média de CO₂ per capita em 2022, com 7,15 toneladas por pessoa ao ano. A Ásia ficou em segundo lugar, com 6,70 toneladas.
 
-China ficou em segundo lugar, com crescimento de 444,74%, seguida por Armenia, com 338,23%.
+As Américas registraram média de 3,80 toneladas, enquanto a África apresentou o menor resultado, com 1,36 tonelada por pessoa ao ano.
 
-Os resultados mostram que países com valores iniciais menores também podem apresentar crescimentos percentuais expressivos. A análise mede a variação proporcional entre os dois anos, não o aumento absoluto em dólares nem a distribuição de renda da população.
+A diferença entre a maior e a menor média regional foi de 5,79 toneladas por pessoa ao ano.
 
-## Recursos SQL utilizados
+## Conclusão
+Os resultados demonstram diferenças expressivas nas emissões médias de CO₂ per capita entre as regiões analisadas. A Europa e a Ásia apresentaram os maiores valores, enquanto a África apresentou o menor.
 
-- SELECT
-- INNER JOIN
-- WHERE
-- AND
-- AS (alias)
-- ROUND
-- ORDER BY DESC
-- LIMIT
+A comparação considera a média dos valores disponíveis para os países de cada região, não uma média ponderada pela população. Portanto, os resultados não representam necessariamente o volume total de emissões de cada região.
 
-## Período analisado
-
-2000 a 2025.
+## Observação
+Os dados utilizados correspondem ao ano de 2022, último ano disponível na tabela `co2_emissions_pc` da base consultada.
