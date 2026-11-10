@@ -37,3 +37,7 @@ O resultado permite comparar o indicador entre países, mas não representa dire
 - WHERE
 - ORDER BY DESC
 - LIMIT
+
+## Período analisado
+
+Ano de referência: 2025.
