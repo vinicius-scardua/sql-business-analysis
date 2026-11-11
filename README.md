@@ -1,21 +1,24 @@
 # SQL Business Analysis
 
-**Exploring Socioeconomic Data with SQL and SQLite**
+**Practical SQL Projects | Data Analysis with SQL and SQLite**
 
 ## About the Project
 
-This portfolio project explores socioeconomic data through SQL queries, analytical questions, and data interpretation.
+This project demonstrates practical SQL skills through hands-on data analysis, covering query development, data exploration, table relationships, aggregations, and analytical interpretation.
 
-Using the Gapminder dataset studied during SQL training at Fundação Getulio Vargas (FGV), the project investigates indicators and patterns across countries, demonstrating practical SQL applications in data analysis and business intelligence.
+Developed as an independent portfolio project, it aims to demonstrate the ability to use SQL to investigate analytical questions, extract insights from structured datasets, and translate query results into meaningful findings.
+
+Using the Gapminder dataset studied during SQL training at Fundação Getulio Vargas (FGV), the project explores socioeconomic and demographic indicators across countries and regions.
 
 ## Objectives
 
-- Develop practical SQL skills using SQLite.
-- Explore socioeconomic indicators through structured analytical questions.
-- Apply data aggregation, filtering, joins, and subqueries.
+- Demonstrate practical SQL proficiency through independent analytical investigations.
+- Develop and execute queries using SQLite.
+- Explore socioeconomic and demographic indicators through structured analytical questions.
+- Apply filtering, aggregation, joins, and subqueries.
 - Identify patterns and compare indicators across countries and regions.
-- Translate query results into clear and meaningful insights.
-- Demonstrate practical SQL applications in analytical problem-solving.
+- Interpret query results and communicate analytical findings.
+- Build a documented portfolio of practical SQL applications.
 
 ## Dataset
 
@@ -41,7 +44,7 @@ The database includes socioeconomic and demographic indicators such as:
 
 ## Analytical Topics
 
-The portfolio contains 10 SQL investigations covering:
+The portfolio contains 10 practical SQL investigations:
 
 1. Countries with the highest GDP per capita.
 2. Brazil's GDP per capita evolution over time.
@@ -84,16 +87,3 @@ sql-business-analysis/
 ├── queries/
 │   ├── 01_pib_per_capita.sql
 │   ├── 02_evolucao_pib_brasil.sql
-│   └── ...
-├── results/
-│   ├── 01_pib_per_capita.md
-│   ├── 02_evolucao_pib_brasil.md
-│   └── ...
-└── README.md
-```
-
-## Project Status
-
-**Completed — 10 SQL analyses developed and documented.**
-
-This project represents a practical application of SQL concepts acquired through training at Fundação Getulio Vargas (FGV), combining query development, data exploration, and analytical interpretation.
